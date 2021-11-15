@@ -1,6 +1,6 @@
 node {
   stage('d') {
-    sshagent (credentials: ['ssh1']) {
+    sshagent (credentials: ['ssafsdh1']) {
       echo "hleo"
     }
   }
