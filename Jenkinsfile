@@ -1,7 +1,10 @@
-node {
-  stage('d') {
-    sshagent (credentials: ['git-hub-ssh-key']) {
-      sh '/var/lib/jenkins/bash.sh'
+pipeline {
+    agent { label 'master' }
+    stages {
+        stage('build') {
+            steps {
+                sh '/var/lib/jenkins/bash.sh'
+            }
+        }
     }
-  }
 }
