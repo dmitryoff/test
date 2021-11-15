@@ -1,7 +1,7 @@
 node {
   stage('d') {
-    sshagent (credentials: ['ssafsdh1']) {
-      echo "hleo"
+    sshagent (credentials: ['git-hub-ssh-key']) {
+      sh '/var/lib/jenkins/bash.sh'
     }
   }
 }
