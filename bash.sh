@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ssh ubuntu@34.240.1.130 'mkdir 113'
+ssh ubuntu@63.35.222.237 'mkdir 113'
