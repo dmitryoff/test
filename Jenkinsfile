@@ -1,7 +1,7 @@
 node {
   stage('d') {
     sshagent (credentials: ['git-hub-ssh-key']) {
-      sh './bash.sh'
+      sh '/bin/bash bash.sh'
     }
   }
 }
